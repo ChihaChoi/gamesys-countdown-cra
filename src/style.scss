@@ -1,0 +1,112 @@
+// camelCase for functional classes e.g. .neonText .lowLight
+//hyphenate
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+/* ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Dancing Script";
+  color: #fff;
+}
+.background-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-image {
+  width: 22em;
+  margin-bottom: 20px;
+}
+
+.description-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+.description-text > em {
+  font-size: 2.3em;
+}
+
+/* timer.css */
+.timer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+.number {
+  width: 80px;
+  visibility: visible;
+  font-size: 3em;
+}
+.colon {
+  visibility: visible;
+  font-size: 3em;
+}
+
+.timer-label {
+  visibility: visible;
+  margin-top: -10px;
+  font-size: 0.6em;
+}
+button {
+  width: 300px;
+  padding: 10px;
+  margin-top: 60px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background-color: #0008;
+  border: 5px solid white;
+  font: inherit;
+  // transition: transform 0.2s, box-shadow 0.2s;
+  &:active {
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+    transform: translate(1px, 4px);
+  }
+}
+.button-text {
+  font-size: 3em;
+  color: white;
+}
+
+.neonLight {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+.noLight {
+  // color: #dfe;
+  text-shadow: none;
+}
+.lowLight {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+}
+.hidden {
+  visibility: hidden;
+}
