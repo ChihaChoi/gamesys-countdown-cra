@@ -39,19 +39,19 @@ const App = () => {
         <img
           className={`top-image`}
           srcset={`${topImage} 1x, ${topImageHd} 2x`}
-          // src={topImage}
+          src={topImage}
         />
         <p className={`description-text `}>
           Get your <em className={"neonLight"}>free £{cashValue}</em> now
         </p>
         <Timer time={time} />
-        {/* <a href="https://www.jackpotjoy.com/"> */}
-        <button>
-          <p className="button-text">Opt in</p>
-        </button>
-        {/* </a> */}
+        <a href="https://www.jackpotjoy.com/">
+          <button>
+            <p className="button-text">Opt in</p>
+          </button>
+        </a>
       </div>
-      <img className={`background-image `} src={backgroundImage} />
+      <img className={`background-image `} src={backgroundImage} srcset={`${backgroundImage} 1x, ${backgroundImageHd} 2x`} />
     </div>
   );
 };
