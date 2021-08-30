@@ -1,6 +1,8 @@
+clone this repo and in the root, run:
+
 ### `npm i`
 
-to install node modules
+to install node modules, and once that's finished run:
 
 ### `npm start`
 
