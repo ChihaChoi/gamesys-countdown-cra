@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./style.scss";
+import "./styling/style.scss";
 import Timer from "./components/Timer";
 
 import topImage from "./images/top_image_scale_1x.png";
