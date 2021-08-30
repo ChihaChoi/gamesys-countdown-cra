@@ -52,9 +52,10 @@ button {
   margin-top: 60px;
   font-size: 1.5em;
   border-radius: 5px;
-  background-color: #0008;
+  background-color: #fff3;
   border: 5px solid white;
   font: inherit;
+  text-shadow: 0 0 3px #000,  0 0 3px #000,  0 0 3px #000;
   // transition: transform 0.2s, box-shadow 0.2s;
   &:active {
     box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;

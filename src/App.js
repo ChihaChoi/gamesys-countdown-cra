@@ -49,11 +49,9 @@ const App = () => {
           Get your <em className={"neonLight"}>free £{cashValue}</em> now
         </p>
         <Timer time={time} />
-        <a href={buttonUrl}>
-          <button>
-            <p className="button-text">Opt in</p>
-          </button>
-        </a>
+        <button onClick={()=> window.open(buttonUrl, "_blank")}>
+          <p className="button-text">Opt in</p>
+        </button>
       </div>
       <img className={`background-image `} src={backgroundImage} srcset={`${backgroundImage} 1x, ${backgroundImageHd} 2x`} />
     </div>
