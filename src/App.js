@@ -16,19 +16,23 @@ if (typeof process.env.REACT_APP_INITIAL_TIME === "undefined") {
   cashValue = process.env.REACT_APP_CASH_VALUE;
   ButtonUrl = process.env.REACT_APP_BUTTON_URL;
 }
-
-// initialTime = 3;
+//load timer from previous session
+if (typeof window.localStorage.currentTimer == 'string'){
+  initialTime = window.localStorage.currentTimer;
+}
 
 const App = () => {
   const [time, setTime] = useState(initialTime);
   const [active, setActive] = useState("");
   useEffect(() => {
-    // exit early when we reach 0
+    // hide elements when timer reaches 0
     if (time <= 0) {
       setActive("hidden");
       return;
     }
+    //Tick the timer
     setTimeout(() => {
+      window.localStorage.currentTimer = time - 1
       setTime(time - 1);
     }, 1000);
   }, [time]);
